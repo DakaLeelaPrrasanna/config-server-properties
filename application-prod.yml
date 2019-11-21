@@ -1,6 +1,11 @@
 spring:
   profiles:
     include: default
+  batch:
+    initialize-schema: always
+    job:
+      enabled: false
+    tablePrefix: BCX_OWNER.BATCH_
 tableName:
   GCMSBA: 'GCMS_TRANSACTION_DETAIL'
   GCMSBE: 'GCMS_BILLING_EVENT_DETAIL'

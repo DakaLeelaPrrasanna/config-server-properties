@@ -32,3 +32,14 @@ tableName:
   BTID: 'BILLING_DETAIIL_TRACE_ID'
   QMRBA: 'QMR_TRANSACTION_DETAIL'
   QMRBE: 'QMR_BILLING_EVENT_DETAIL'
+  
+  batch:
+  chunk:
+    size: 10
+file:
+  regexIgnore:
+    pattern: '.*temp.*|.*tmp.*'
+  typeRegex:
+    pattern: _
+  tablePrefix:
+    name: BCX_OWNER.

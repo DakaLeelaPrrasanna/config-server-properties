@@ -6,6 +6,22 @@ spring:
     job:
       enabled: false
     tablePrefix: BCX_OWNER.BATCH_
+  datasource:
+    driver-class: "oracle.jdbc.driver.OracleDriver"
+    password: "SxNQWEa1"
+    url: "jdbc:oracle:thin:@bil0stl25:1527:DBCXS"
+    username: "bcx_user"
+    testOnBorrow: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: SELECT 1
+    max-active: 10
+    max-idle: 2
+    max-wait: 8000
+  jpa:
+    hibernate:
+      ddl-auto: none
 tableName:
   GCMSBA: 'GCMS_TRANSACTION_DETAIL'
   GCMSBE: 'GCMS_BILLING_EVENT_DETAIL'
